@@ -1403,7 +1403,7 @@
      border: none;
      width: 130px;
      height: 100px;
-     background: url("../images/logo-web.jpg") no-repeat center;
+     background: url("../images/Logo.png") no-repeat center;
      background-size: 90px 100px;
      font: 0/0 a;
      text-shadow: none;
@@ -1665,9 +1665,9 @@
  
  @media only screen and (max-width: 768px) {
      header .header-logo a {
-         width: 50px;
-         height: 40px;
-         background-size: 50px 40px;
+         width: 100px;
+         height: 80px;
+         background-size: 90px 70px;
      }
  }
  
