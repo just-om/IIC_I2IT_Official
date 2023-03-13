@@ -1386,7 +1386,7 @@
  
  header .header-logo {
      position: absolute;
-     left: 32px;
+     left: 35px;
      top: 32px;
      -moz-transition: all 1s ease-in-out;
      -o-transition: all 1s ease-in-out;
@@ -1401,10 +1401,10 @@
      padding: 0;
      outline: 0;
      border: none;
-     width: 130px;
-     height: 100px;
+     width: 150px;
+     height: 120px;
      background: url("../images/Logo.png") no-repeat center;
-     background-size: 90px 100px;
+     background-size: 100px 110px;
      font: 0/0 a;
      text-shadow: none;
      color: transparent;
@@ -1414,6 +1414,37 @@
      -ms-transition: all 0.5s ease-in-out;
      transition: all 0.5s ease-in-out;
  }
+
+ header .header-logo-iic{
+    position: absolute;
+     right: 150px;
+     top: 32px;
+     -moz-transition: all 1s ease-in-out;
+     -o-transition: all 1s ease-in-out;
+     -webkit-transition: all 1s ease-in-out;
+     -ms-transition: all 1s ease-in-out;
+     transition: all 1s ease-in-out;
+ }
+
+ header .header-logo-iic a {
+    display: block;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: none;
+    width: 190px;
+    height: 120px;
+    background: url("../images/IIC LOGO.png") no-repeat center;
+    background-size: 170px 100px;
+    font: 0/0 a;
+    text-shadow: none;
+    color: transparent;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+ } 
  
  /* ------------------------------------------------------------------- 
   * menu trigger - (_layout.css) 
@@ -1431,7 +1462,7 @@
      font-size: 1.4rem;
      text-transform: uppercase;
      letter-spacing: 0.2rem;
-     color: rgba(255, 255, 255, 0.5);
+     color: rgba(0, 0, 0, 0.9);
      -moz-transition: all 0.3s ease-in-out;
      -o-transition: all 0.3s ease-in-out;
      -webkit-transition: all 0.3s ease-in-out;
@@ -1449,7 +1480,7 @@
  
  #header-menu-trigger:hover,
  #header-menu-trigger:focus {
-     color: #ffffff;
+     color: #000000;
  }
  
  #header-menu-trigger .header-menu-text {
@@ -1669,6 +1700,11 @@
          height: 80px;
          background-size: 90px 70px;
      }
+     header .header-logo-iic a {
+        width: 110px;
+        height: 80px;
+        background-size: 110px 70px;
+    }
  }
  
  @media only screen and (max-width: 400px) {
@@ -1685,8 +1721,8 @@
 #home {
      width: 100%;
      height: 100%;
-     background-color: #151515;
-     background-image: url(../images/alumni_img2_lobby\ \(1\).png);
+     background-color: #ffffff;
+     background-image: url(../images/home-bg.jpg);
      /* filter:grayscale(10); */
      background-repeat: no-repeat;
      background-position: center 30%;
@@ -1702,15 +1738,14 @@
  .register-summit{
     font-size: 1.5rem;
     border-radius: 10px;
-    background-color: rgb(8, 30, 228);
+    background-color: rgb(59, 75, 226);
      color: white;
-    border: 1px solid rgb(8, 30, 228);
     transition: 500ms ;
  }
 
 
  .register-summit:hover {
-    background-color: rgb(8, 30, 228);
+    background-color: rgb(59, 75, 226);
      color: white;
      font-size: 1.4rem;
      box-shadow: 0 8px 16px 0 rgb(0, 0, 0, 0.7);
@@ -1723,7 +1758,7 @@
      width: 100%;
      height: 100%;
      opacity: 0.2;
-     background-color: #19191b;
+     background-color: #ffffff;
  }
  
  .home-content-table {
@@ -1732,7 +1767,7 @@
      display: table;
      position: relative;
      text-align: center;
-     backdrop-filter:blur(4px);
+     /*backdrop-filter:blur(4px);*/
  }
  
  .home-content-tablecell {
@@ -1750,11 +1785,11 @@
  }
  
  .home-content-tablecell h2{
-    text-shadow:-1.5px 0px 0px #ffffff,1.5px 0px 0px #ffffff,0px -1.5px 0px #ffffff,0px 1.5px 0px #ffffff;
+    /* text-shadow:-1.5px 0px 0px #ffffff,1.5px 0px 0px #ffffff,0px -1.5px 0px #ffffff,0px 1.5px 0px #ffffff; */
  }
 
  .home-content-tablecell h3 {
-     font-family:monospace;
+     font-family:"montserrat-regular", sans-serif;
      font-size: 2.2rem;
      color: rgb(255, 255, 255);
      text-transform: uppercase;
@@ -1764,11 +1799,11 @@
  }
  
  .home-content-tablecell h1 {
-    font-family:monospace;
+    font-family:"montserrat-regular", sans-serif;
      font-size: 5rem;
      line-height: 1.133;
-     color: #ffffff;
-     text-shadow:-1px 0px 0px #3068cf,1px 0px 0px #3068cf,0px -1px 0px #3068cf,0px 1px 0px #3068cf;
+     color: #000000;
+     /*text-shadow:-1px 0px 0px #3068cf,1px 0px 0px #3068cf,0px -1px 0px #3068cf,0px 1px 0px #3068cf;*/
  }
  
  
@@ -2045,7 +2080,10 @@
      color: #2e383f;
      margin-top: 6rem;
  }
- 
+ #about ul{
+    text-decoration: none;
+    list-style: none;
+ }
  /* ------------------------------------------------------------------- 
   * responsive:
   * about 
@@ -2174,7 +2212,8 @@
  
  #services .services-content {
      text-align: center;
-     max-width: 1040px;
+     max-width: 100%;
+     
  }
  
  #services .services-list {
@@ -2265,6 +2304,7 @@
   * ------------------------------------------------------------------- */
  
  #portfolio {
+    border-top: solid 0.5px #f9a828;;
      background: #ffffff;
      min-height: 800px;
      position: relative;
@@ -2272,7 +2312,7 @@
  }
  
  #portfolio .intro-wrap {
-     padding: 15rem 0 21rem;
+     padding: 7rem 0 21rem;
      background: #111111;
  }
  
